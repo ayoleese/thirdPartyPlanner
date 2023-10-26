@@ -15,7 +15,7 @@
   // useful when saving the description in local storage?
   //
   //  var saveBtn = document.querySelector('.saveBtn')
-  //  var textEl = $('<textarea>');
+ 
   //  console.log(textEl);
    
 
@@ -33,16 +33,24 @@
   // current hour in 24-hour time?
 
   const currentTime = parseInt(dayjs().format('HH')); //defines current hour
-console.log(currentTime);
-  
-  $(function () { 
-    let timeBlockEl = $('.time-block');
-//     timeBlockEl.on('click', '.saveBtn', function(event){
-//       event.preventDefault();
+// console.log(currentTime);
+  function myFunction(word){
+    console.log(word);
+  }
 
-//       localStorage.setItem();
-//     })
- 
+  $(function () { 
+    let allTimeBlock = $('.time-block');
+    allTimeBlock.on('click', '.saveBtn', function(event){
+    var timeBlock = event.currentTarget.parentElement;
+    var textEl = timeBlock.querySelector('.description');
+
+      localStorage.setItem(timeBlock.id, textEl.value);
+      // console.log(timeBlock.id);
+
+    })
+    
+
+
 
 
 //   // TODO: Add code to get any user input that was saved in localStorage and set
