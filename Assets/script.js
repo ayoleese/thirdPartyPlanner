@@ -1,25 +1,19 @@
-const currentTime = parseInt(dayjs().format('HH')); //defines current hour
+
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
  
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-
-var container = $('#container');
-console.log(container);
+  // TODO: Add code to apply the past, present, or future class to each time block by comparing the id to the current hour. HINTS: How can the id attribute of each time-block be used to conditionally add or remove the past, present, and future classes? How can Day.js be used to get the current hour in 24-hour time?
 
 $(document).ready(function() {
-  var container = $('#container');
-  var currentTime = dayjs().hour(); 
+  var container = $('#container'); //grabs the container in HTML
+  // console.log(container);
+  const currentTime = parseInt(dayjs().format('HH')); //defines current hour
 
   var timeRanges = [];
-
-  for (var i = 9; i < 24; i++) {
+// displays the classes and attribute according to the time
+  for (var i = 0; i < 24; i++) {
     var timeClass = currentTime > i ? 'past' : currentTime === i ? 'present' : 'future';
     timeRanges.push({ start: i, label: i, class: timeClass });
 }
