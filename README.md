@@ -1,41 +1,12 @@
 # thirdPartyPlanner
-
-
-
-<!-- ## Your Task
-
-Create a simple calendar application that allows a user to save events for each hour of a typical working day (9am&ndash;5pm) by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
-
-## User Story
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+ Create a daily planner according to the time 
 
 ## Acceptance Criteria
+* It is complete when the current date is displayed on the page
+* It is complete when all class and attributes are linked to the index.HTML
+* It is complete when the corresponding time slots is highlighted when inactive, active and in the future
+* It is completed when all text input are saved into local storage
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours of 9am&ndash;5pm
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page -->
-<!-- THEN the saved events persist
-```
+https://github.com/ayoleese/thirdPartyPlanner
 
-The following animation demonstrates the application functionality:
-
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
-
+![Screen shot of page](<Screenshot 2023-10-26 at 11.05.13 PM.png>)
