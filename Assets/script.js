@@ -1,5 +1,4 @@
 
-
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -49,7 +48,7 @@ $(document).ready(function() {
 });
 
 
- // TODO: Add a listener for click events on the save button. This code should
+ // TODO: Add a listener for click events on the save button. 
   $(function () { 
     let allTimeBlock = $('.time-block');
     // console.log(allTimeBlock);
@@ -62,7 +61,6 @@ $(document).ready(function() {
 
     })
   
-
 });
 
   // TODO: Add code to display the current date in the header of the page.
@@ -76,7 +74,7 @@ todaysDate();
 
 
 
-
+//SIDE NOTE TO COMPLETE FOR CHALLENGE
 //render function-or- init function
 //getItem
 //local storage when item is saved
